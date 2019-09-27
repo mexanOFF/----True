@@ -1,0 +1,233 @@
+﻿    @import url('https://fonts.googleapis.com/css?family=Modak|Oswald|Teko&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+    body, html {
+        width: 100%;
+        height: 100%;
+    }
+    body {
+        background-color: #acbab8; 
+        font-family: Trebuchet MC, Helvetica;
+    }
+header {
+    width: 100%;
+    padding: 20px 0.5% 12px 0.5%;
+    background: rgba(0, 0, 0, 0.50);
+    float: right;
+    position: fixed;
+}
+   header #logo {
+       color: #fff;
+       cursor: pointer;
+   }
+    header #logo span {
+        font-size: 2.0em;
+        line-height: 10px;
+        margin-left: auto;
+        margin-bottom: auto;
+        font-family: 'GOST Common';
+    }
+   header #Navigation {
+       font-family:'GOST Common';
+       font-size: 1.5em;    
+       width: 100%;
+   }
+
+@media (max-width:800px) {
+    header #logo span {
+        font-size: 1.5em;
+        float: none;
+        width: 100%;}
+    }
+
+    @media (max-width:800px) {
+        #logo {
+            font-size: 1.0em;
+            float: none;
+            width: 100%;
+        }
+
+        #Navigation a {
+            font-size: 0.8em;
+            float: none;
+            width: 100%;
+        }
+    }
+
+    #Navigation > a {
+        color: #fff;
+    }
+
+        #Navigation > a:hover {
+            color: #b200ff;
+            text-decoration: none;
+        }
+
+        #Navigation > a:not(:last-child) {
+            margin-right: 5%;
+        }
+
+    .fixed {
+        z-index: 5000;
+        border-bottom: 1px solid silver;
+    }
+
+    header .fixed #logo {
+        color: #ff0000;
+    }
+
+    .fixed #Navigation a {
+        color: #fff
+    }
+
+        .fixed #Navigation a:hover {
+            color: #000;
+            text-decoration: dotted;
+        }
+
+    /* 1. Блок "#top"
+    2. В этот момент я осознал что "article"... */
+
+#top {
+    width: 100%;
+    height: 100%;
+    background: url(https://avatars.mds.yandex.net/get-pdb/467185/b3cd4614-e8c2-4cac-801e-307472e69ce8/s1200?webp=false) no-repeat center top;
+    background-size: cover;
+    background-color: none;
+    text-align: center;
+    font-family: 'GOST Common';
+    color: #FFF;
+}
+    #top h1 {
+        padding: 48% 1px 20% 1px;
+        opacity: 1;
+        font-size: 3.0em;
+        text-decoration: none;
+    }
+
+/*  Блок "#main" со специальностями*/
+
+#main {
+    width: #top;
+    height: 100%;
+    background: url(https://sm.mashable.com/t/mashable_sea/feature/a/all-20-mar/all-20-marvel-cinematic-universe-movies-are-coming-to-imax_9jfr.1200.jpg) no-repeat center top;
+    background-size: cover;
+    background-color: none;
+    text-align: left;
+    font-family: 'GOST Common';
+    color: black;
+    padding: 3%;
+    font-size: 1.15em;
+}
+
+#main h2 {
+    text-align: center;
+    color:#000;
+    font-size: 2.3em;
+    padding: 10px;
+}
+
+/* 3. Блок "#advantages"*/
+
+#advantages {
+    width: #top;
+    height: 100%;
+    background: url(https://images2.kabanchik.by/af73f30e-8e87-4d10-961f-6d572ae6a2d5.jpg) no-repeat center top;
+    background-size: cover;
+    background-color: none;
+    text-align: left;
+    font-family: 'GOST Common';
+    color: black;
+    padding: 10%;
+    font-size: 2.3em;
+}
+
+#advantages h2 {
+    text-align: center;
+    color: #000
+    font-size: 2.3em;
+    padding: 5px;
+}
+
+/* 4. Блок "#contacts"*/
+
+#contacts {
+    width: #top;
+    height: 100%;
+    background: url(https://avatars.mds.yandex.net/get-zen_doc/1348874/pub_5c6a507f9d7a9a00aff8d2d7_5c6a52ecbbdc3c00af78ae64/scale_1200) no-repeat center top;
+    background-size: cover;
+    background-color: none;
+    text-align: left;
+    font-family: 'GOST Common';
+    color: black;
+    padding: 2%;
+    font-size: 1.3em;
+}
+
+#contacts h2 {
+    text-align: center;
+    color: #000;
+    font-size: 2.3em;
+    padding: 1px;
+}
+
+/* 5. Блок "#write_me_baby"*/
+
+#write_me_baby {
+    width: #top;
+    height: 100%;
+    background: url(https://disshelp.ru/blog/wp-content/uploads/2019/08/studying-on-computer.jpg) no-repeat center bottom;
+    background-size: cover;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    font-family: 'GOST Common';
+    color: black;
+    padding: 6%;
+}
+    #write_me_baby h3 {
+        font-family: 'GOST Common';
+        font-size: 2.5em;
+        color: black;
+    }
+    #form_input {
+        margin-top: 15px;
+        width: 35%;
+        margin-left: 38%;
+        font-size: 1.5em;
+}
+
+    #form_input label {
+    cursor: pointer;
+    }
+
+    #form_input label > span {
+        color: red;
+    }
+        #form_input input, #form_input textarea {
+            margin-bottom: 10px;
+            width: 50%;
+            padding: 10px, 2%;
+            border-radius: 6px;
+            border: solid silver;
+            font-size: 0.8em;
+            color: #808080;
+
+        }
+
+        #form_input input:focus, #form_input textarea:focus {
+            border-color: #b200ff;
+
+        }
+
+        .btn {
+            float: left;
+            border-radius: 6px;
+            cursor: pointer;    
+        }
+
+        .btn:hover {
+            background-color: #fff;
+        }
