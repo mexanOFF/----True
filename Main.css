@@ -36,10 +36,11 @@ header {
         font-size: 1.7em;
         width: 100%;
     }
+    /*Добавим чутка адаптивности для маленьких экранов*/
 
 @media (max-width:800px) {
     header #logo span {
-        font-size: 1.5em;
+        font-size: 1.8em;
         float: none;
         width: 100%;}
     }
@@ -62,9 +63,12 @@ header {
         color: #fff;
     }
 
+
+
         #Navigation > a:hover {
-            color: #b200ff;
-            text-decoration: none;
+            text-decoration:  overline;
+            text-decoration-color: blueviolet;
+            text-decoration-style:none ;
         }
 
         #Navigation > a:not(:last-child) {
@@ -85,9 +89,10 @@ header {
     }
 
         .fixed #Navigation a:hover {
-            color: #000;
-            text-decoration: dotted;
-        }
+    text-decoration: overline;
+    text-decoration-color: blueviolet;
+    text-decoration-style: none;
+}
 
     /* 1. Блок "#top"
     2. В этот момент я осознал что "article"... */
@@ -103,32 +108,51 @@ header {
     color: #FFF;
 }
     #top h1 {
-        padding: 48% 1px 20% 1px;
+        padding: 40% 1px 1% 1px;
         opacity: 1;
         font-size: 3.4em;
         text-decoration: none;
     }
+
+    @media (max-width:800px) {
+        #top h1 {
+            
+            font-size: 2.2em;
+            float: none;
+            width: 100%;
+        }
+}
+
 
 /*  Блок "#main" со специальностями*/
 
 #main {
     width: #top;
     height: 100%;
-    background: url(https://sm.mashable.com/t/mashable_sea/feature/a/all-20-mar/all-20-marvel-cinematic-universe-movies-are-coming-to-imax_9jfr.1200.jpg) no-repeat center top;
+    background: url(https://miro.medium.com/max/1200/1*leT6ftmXam6V1MPhpR1Qzw.jpeg) no-repeat center top;
     background-size: cover;
-    background-color: none;
-    text-align: center;
-    font-family:  'Segoe Script';
-    color: red;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Dutch801 Rm BT';
+    color: white;
     padding: 3%;
     font-size: 1.15em;
+    text-shadow: 30px 25px 10px #b200ff;
+    text-indent: 50px;
+    
 }
 
 #main h2 {
     text-align: center;
-    color:#000;
-    font-size: 3.3em;
+    color:#fff;
+    font-size: 2.3em;
     padding: 10px;
+    text-indent: initial;
+}
+@media (max-width: 800px){
+    #main {
+        font-size: .8em;
+    }
 }
 
 /* 3. Блок "#advantages"*/
@@ -136,43 +160,67 @@ header {
 #advantages {
     width: #top;
     height: 100%;
-    background: url(https://images2.kabanchik.by/af73f30e-8e87-4d10-961f-6d572ae6a2d5.jpg) no-repeat center top;
+    background: url(https://img2.goodfon.ru/original/1920x1200/6/87/tuman-doroga-stupeni.jpg) no-repeat center top;
     background-size: cover;
     background-color: none;
-    text-align: center;
+    text-align:  justify;
     font-family: 'Mongolian Baiti';
-    color: black;
+    color: #ffffff;
     padding: 10%;
     font-size: 2.3em;
+    text-shadow: 15px 15px 40px blueviolet;
+    
 }
 
 #advantages h2 {
     text-align: center;
-    color: #000;
-    font-size: 2.3em;
+    color: #fff;
+    font-size: 1.3em;
     padding: 5px;
 }
 
+.text-typing {
+    width: 40em;
+    color: green;
+    font-size: 22px;
+    font-family: 'Marck Script', cursive;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+
 /* 4. Блок "#contacts"*/
+
+
+
 
 #contacts {
     width: #top;
     height: 100%;
-    background: url(https://avatars.mds.yandex.net/get-zen_doc/1348874/pub_5c6a507f9d7a9a00aff8d2d7_5c6a52ecbbdc3c00af78ae64/scale_1200) no-repeat center top;
+    background: url(http://vacuumtronic.by/wp-content/uploads/2019/05/call-us2.jpg) no-repeat center top;
     background-size: cover;
     background-color: none;
-    text-align: left;
-    font-family: 'GothicE';
-    color: black;
+    text-align: justify;
+    font-family: 'Mongolian Baiti';
+    color: white;
     padding: 2%;
     font-size: 1.3em;
-}
+    text-align: center;
+    }
 
 #contacts h2 {
     text-align: center;
-    color: #000;
+    color: #fff;
     font-size: 2.3em;
     padding: 1px;
+}
+
+@media (max-width: 800px) {
+    #contacts {
+        font-size: .9em;
+    }
 }
 
 /* 5. Блок "#write_me_baby"*/
